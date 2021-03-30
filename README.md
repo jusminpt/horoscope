@@ -1,1 +1,1 @@
-This project is under development.
+This project demonstrate how to call API using PHP and JavaScript.
