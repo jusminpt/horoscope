@@ -1,1 +1,1 @@
-# horoscope
+This project is under development.
