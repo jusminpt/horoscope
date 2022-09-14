@@ -6,7 +6,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="widget subscribe no-box">
                             <h5 class="widget-title">About Us<span></span></h5>
-                            <p>A beauty forum that dedicated to bring you the latest makeup news, makeup reviews, and beauty tips, and much more!</p>
+                            <p>A horoscope community that bring everyone together, and much more!</p>
                         </div>
                     </div>
         
