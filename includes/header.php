@@ -30,9 +30,10 @@
     
     <div class="jumbotron jumbotron-fluid" style="padding-top: 10px !important;padding-bottom: 10px !important; margin-bottom:0px;">
         <div class="container" >
-          <h1 class="display-4">BeautyComminuty.com</h1>
-          <p class="lead">Welcome to the beauty world to discuss topics related to all things beauty,
-            and discuss the world of influencers and their content.</p>
+          <h1 class="display-4">HoroscopeToday</h1>
+          <p class="lead">Welcome to the HoroscopeToday where you can discover your luck
+            and interact with people in the community. 
+          </p>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" >
@@ -44,13 +45,10 @@
             <span class="navbar-text"></span>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link"href="index.php"><span class="fas fa-home"></span>  Homepage</a>
+                    <a class="nav-link"href="horoscope.php">Horoscope</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"href="webboard.php">Webboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"href="horoscope.php">Horoscope</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -62,9 +60,6 @@
                         <a class="dropdown-item" href="fortune_cookies.php">Fortune cookie</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="genie.php">Ask the Genie</a>
-                        <!-- Future project since there is no free emoji API -->
-                        <!-- <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="how_your_day.php">How's your day?</a> -->
                     </div>
                 </li>
                 <!--use this and collapse class to show-->

@@ -213,9 +213,9 @@
 
         <!--get a google top headline news-->
         <?php
-            $url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=c7b83876ecf14359925815d9c9e9e049';
+            $url = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=c7b83876ecf14359925815d9c9e9e049';
             $response = file_get_contents($url);
-            $NewsData = json_decode($response);
+            $NewsData = json_decode($response, true);
         ?>
             <div class="col-sm-3 justify-content-center" id="news" style="align-item:center;">
                 <div class="row align-items-center">
@@ -238,7 +238,7 @@
                         </div>
                         
                         <?php
-                        if($counter==2) break;
+                        if($counter==5) break;
                         }
                         ?>
                     </div>
@@ -263,7 +263,7 @@
             </div>
             <div class="card-group" style="margin: 40px;">
                 <div class="card">
-                  <img class="card-img-top" src="https://cms.astrology.com/wp-content/uploads/2019/06/element-water-astrology.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="https://www.mollysastrology.com/wp-content/uploads/2020/10/harmonies_water-600x593.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Water Signs</h5>
                     <p class="card-text">
@@ -276,7 +276,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img class="card-img-top" src="https://cms.astrology.com/wp-content/uploads/2019/06/element-fire-astrology.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="https://www.mollysastrology.com/wp-content/uploads/2020/10/harmonies_fire-600x593.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Fire Signs</h5>
                     <p class="card-text">Fire signs tend to be passionate, dynamic, and temperamental. 
@@ -289,7 +289,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img class="card-img-top" src="https://cms.astrology.com/wp-content/uploads/2019/06/element-earth-astrology.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="https://www.mollysastrology.com/wp-content/uploads/2020/10/harmonies_earth-600x593.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Earth Signs</h5>
                     <p class="card-text">Earth signs are “grounded” and the ones that bring us down to earth. 
@@ -302,7 +302,7 @@
                   </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="https://cms.astrology.com/wp-content/uploads/2019/06/element-air-astrology.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.mollysastrology.com/wp-content/uploads/2020/10/harmonies_air-600x593.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Air Signs</h5>
                       <p class="card-text">Air signs are rational, social, and love communication and relationships with other people. 
@@ -314,39 +314,6 @@
                     </div>
                   </div>
               </div>
-        </div>
-        <!--get a google business news-->
-        <?php
-            $url = 'http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=c7b83876ecf14359925815d9c9e9e049';
-            $response = file_get_contents($url);
-            $NewsData = json_decode($response);
-        ?>
-        <div class="col-sm-3 justify-content-center" id="news" style="align-item:center;">
-            <div class="row align-items-center">
-                <div class="container-fluid pl-0 pr-0">
-                        <?php
-                        // use counter to get only top2 news
-                        $counter=0;
-                        
-                            foreach($NewsData->articles as $News)
-                            {
-                                $counter++;
-                        ?>
-                        <!-- insert each data into card -->
-                        <div class="card"  id="news" style="width: 18rem;">
-                            <img class="card-img-top" src="<?php echo $News->urlToImage ?>" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $News->title ?></h5>
-                                <span><a href="<?php echo $News->url ?>">Read more</a></span>
-                            </div>
-                        </div>
-                        
-                        <?php
-                        if($counter==2) break;
-                        }
-                        ?>
-                </div>
-            </div>
         </div>
     </div>
     </div>

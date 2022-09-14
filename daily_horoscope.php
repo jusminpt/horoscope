@@ -52,8 +52,16 @@
 	<div class="row justify-content-center align-items-center" style="margin:10px; ">
 		<div class="col-sm-8">
 			<!-- Layout Horoscope Image & Tabs -->
-			<div class="container-fluid pl-0 pr-0">
-			<img src="https://www.astrology.com//images-US/signs/banner/<?php echo $sign;?>-1x.png" class="img-fluid mx-auto d-block" width="100%">
+			<div class="container-fluid pl-0 pr-0" style="background-color: #FFDAB9;">
+			<div class="row align-items-center">
+				<div class="col text-center">
+					<h2><?php echo ucfirst($sign) ?> Daily horoscope</h2>
+					<span><?php echo $ytdData[$ytdKeys[1]]?></span>
+				</div>
+				<div class="col">
+					<img src="https://mk0astrostylecoa3hb9.kinstacdn.com/wp-content/uploads/2020/07/<?php echo ucfirst($sign) ?>-circle-icon.png" class="img-fluid mx-auto d-block" width="100%">
+				</div>
+			</div>
 			</div>
 			<!-- Tab Navigation <UL> -->
 			<ul class="nav nav-tabs" id="myTab" role="tablist" style="overflow: hidden;">
